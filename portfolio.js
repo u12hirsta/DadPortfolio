@@ -1,28 +1,20 @@
-var slideIndex = 1;
-showSlides(slideIndex);
-
-// Next/previous controls
-function plusSlides(n) {
-  showSlides(slideIndex += n);
-}
-
-// Thumbnail image controls
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-}
-
-function showSlides(n) {
-  var i;
-  var slides = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("dot");
-  if (n > slides.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none";
+var imgArray = new Array();
+imgArray[0] = new Image();
+imgArray[0].src = 'http://qnimate.com/wp-content/uploads/2014/03/images2.jpg';
+imgArray[1] = new Image();
+imgArray[1].src = 'http://via.placeholder.com/350x150';
+var i = 0;
+function nextImage(element) {
+  var img = document.getElementById(element);
+  while(i<=imgArray.length-1){
+    if(i == imgArray.length-1){
+      document.getElementById(element).src = imgArray[0].src;
+      i = 0;
+      break;
+    }else {
+      document.getElementById(element).src = imgArray[i+1].src;
+      i++;
+      break;
+    }
   }
-  for (i = 0; i < dots.length; i++) {
-      dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex-1].style.display = "block";
-  dots[slideIndex-1].className += " active";
 }
