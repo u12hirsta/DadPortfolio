@@ -2,7 +2,7 @@ body {
   font-size: 3vh;
   background-image: url(Bricks.png);
 }
-ul {
+.navigationBar ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -12,17 +12,18 @@ ul {
   border-top: none;
   border-bottom: none;
 }
-li {
+.navigationBar li {
   float: left;
 }
-li a {
+.navigationBar li a {
   display: block;
   color: black;
   text-align: center;
   padding: 2vw 4vh;
   text-decoration: none;
+  border-bottom: 4px solid white;
 }
-li a:hover{
+.navigationBar li a:hover{
   border-bottom: 4px solid grey;
 }
 .headerContainer {
