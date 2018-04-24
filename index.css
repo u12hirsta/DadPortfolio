@@ -1,5 +1,6 @@
 body {
   font-size: 3vh;
+  background-image: url(Bricks.png);
 }
 ul {
   list-style-type: none;
@@ -29,11 +30,13 @@ li a:hover:not(.active){
   border-bottom: 4px solid rgb(0, 200, 255);
 }
 .headerContainer {
+  background-color: #FFF;
   display: block;
   background-color: #333;
   border: 1.5px solid rgb(100, 100, 100);
 }
 .SocialBar{
+  background-color: #FFF;
   height:25px;
   border: 1.5px solid rgb(100, 100, 100);
 }
@@ -43,6 +46,7 @@ li a:hover:not(.active){
   float: right;
 }
 .topBar{
+  background-color: #FFF;
   border: 1.5px solid rgb(100, 100, 100);
   border-top: 0;
 }
@@ -55,4 +59,45 @@ li a:hover:not(.active){
   margin-top: 10px;
   background: transparent;
   border: none;
+}
+.ScrollingGallery{
+  background-color: #FFF;
+  height:300px;
+  border: 1.5px solid rgb(100, 100, 100);
+}
+.Picture{
+  background-color: #FFF;
+  height:300px;
+  border: 1.5px solid rgb(100, 100, 100);
+  border-top: none;
+}
+.ThreeStep{
+  background-color: #FFF;
+  height:300px;
+  border: 1.5px solid rgb(100, 100, 100);
+  border-top: none;
+}
+.sidenav {
+    width: 100px;
+    position: fixed;
+    z-index: 1;
+    border-top-left-radius: 40px;
+    border-bottom-left-radius: 40px;
+    top: 75%;
+    right: 0;
+    background-color: rgba(0, 200, 255, 0.7);
+    overflow-x: hidden;
+    padding-top: 10px;
+}
+
+.sidenav a {
+    padding: 0px 0px 6px 16px;
+    text-decoration: none;
+    font-size: 25px;
+    color: black;
+    display: block;
+}
+
+.sidenav a:hover {
+    color: #f1f1f1;
 }
