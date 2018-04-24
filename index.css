@@ -22,12 +22,8 @@ li a {
   padding: 2vw 4vh;
   text-decoration: none;
 }
-li a:hover:not(.active){
+li a:hover{
   border-bottom: 4px solid grey;
-}
-.active {
-  color: black;
-  border-bottom: 4px solid rgb(0, 200, 255);
 }
 .headerContainer {
   background-color: #FFF;
@@ -53,10 +49,11 @@ li a:hover:not(.active){
 .title {
   margin-top: 0;
 }
-.search {
+.invis{
   float: right;
-  margin-right: 10px;
-  margin-top: 10px;
+  padding:0;
+  margin-right: 2px;
+  margin-top:0;
   background: transparent;
   border: none;
 }
@@ -71,7 +68,13 @@ li a:hover:not(.active){
   border: 1.5px solid rgb(100, 100, 100);
   border-top: none;
 }
-.ThreeStep{
+.Quote{
+  background-color: #FFF;
+  height:300px;
+  border: 1.5px solid rgb(100, 100, 100);
+  border-top: none;
+}
+.Contact{
   background-color: #FFF;
   height:300px;
   border: 1.5px solid rgb(100, 100, 100);
@@ -83,7 +86,7 @@ li a:hover:not(.active){
     z-index: 1;
     border-top-left-radius: 40px;
     border-bottom-left-radius: 40px;
-    top: 75%;
+    top: 70%;
     right: 0;
     background-color: rgba(0, 200, 255, 0.7);
     overflow-x: hidden;
@@ -99,5 +102,5 @@ li a:hover:not(.active){
 }
 
 .sidenav a:hover {
-    color: #f1f1f1;
+    color: #AAA;
 }
