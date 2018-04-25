@@ -3,7 +3,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Rymac Technicolor</title>
+    <title>Rymac Surface Coatings</title>
     <script src="index.js"></script>
     <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -13,27 +13,35 @@
         <div class="SocialBar">
           <button class="invis"><i class="fa fa-facebook-square" style="font-size:24px; color:#3B5998;"></i></button>
           <button class="invis"><i class="fa fa-twitter-square" style="font-size:24px; color:#00aced;"></i></button>
-          <button class="invis"><i class="fa fa-flickr" style="font-size:24px;"></i></button>
+          <button class="invis" onclick="window.scroll({top:900, left:0, behavior:'smooth'});"><i class="fa fa-map-marker" style="font-size:24px; color:#E83030;"></i></button>
         </div>
         <div class="topBar">
           <h2 class="title">Logo </h2>
         </div>
         <div class="navigationBar">
           <ul>
-            <li><a>Home</a></li>
-            <li><a>Quote</a></li>
-            <li><a>Gallery</a></li>
-            <li><a>Contact</a></li>
+            <li><button onclick="window.scroll({top:0, left:0, behavior:'smooth'});">Home</button></li>
+            <li><button onclick="window.scroll({top:300, left:0, behavior:'smooth'});">Gallery</button></li>
+            <li><button onclick="window.scroll({top:600, left:0, behavior:'smooth'});">Quote</button></li>
+            <li><button onclick="window.scroll({top:900, left:0, behavior:'smooth'});">Contact</button></li>
           <!--<button class="invis" type="button"><i class="fa fa-search" style="font-size: 20px;"></i></button>-->
           </ul>
         </div>
     </div>
-    <button id="btnClose" class="sideButton" id="sideButton"><p class="side" style="font-size:32px;">></p></button>
+    <button id="btnClose" class="sideButton" id="sideButton"><i class="fa fa-arrow-right" id="arrow" style="font-size:24px;"></i></button>
     <div class="sidenav" id="sidenav">
-        <a href="#">Home</a>
-        <a href="#">Quote</a>
-        <a href="#">Gallery</a>
-        <a href="#">Contact</a>
+        <button class="side" onclick="window.scroll({
+          top: 0,
+          left: 0,
+          behavior: 'smooth'
+        });">Home</button>
+        <button class="side">Gallery</button>
+        <button class="side" onclick="window.scroll({
+          top: 600,
+          left: 0,
+          behavior: 'smooth'
+        });">Quote</button>
+        <button class="side" href="#">Contact</button>
     </div>
     <div class="BodyContainer">
       <div class="ScrollingGallery">
@@ -45,11 +53,11 @@
       <div class="Quote">
 
       </div>
+      <div class="Contact">
+
+      </div>
     </div>
     <div class="FooterContainer">
-
-    </div>
-    <div class="Contact">
 
     </div>
     <script src="index.js"></script>
