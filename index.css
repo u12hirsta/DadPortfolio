@@ -12,12 +12,24 @@ body {
   border-top: none;
   border-bottom: none;
 }
+.topBar{
+  background-image: url('woodBack.jpg');
+  text-align: center;
+}
+.title{
+  font-size: 48px;
+  margin: 0px;
+}
+.subtitle{
+  margin: 0px;
+}
 .navigationBar li {
   float: left;
 }
 .navigationBar li button {
   display: block;
   color: black;
+  background:none;
   text-align: center;
   padding: 2vw 4vh;
   text-decoration: none;
@@ -86,7 +98,7 @@ body {
 .sidenav  {
     width: 125px;
     position: fixed;
-    display: block;
+    display: none;
     z-index: 0;
     border-top-left-radius: 40px;
     border-bottom-left-radius: 40px;
@@ -112,9 +124,9 @@ body {
 .sideButton {
   position: fixed;
   top: 78%;
-  right: 98px;
+  right: 10px;
   z-index:1;
-  background: none;
+  background: rgba(0, 200, 255, 0.7);
   border: none;
   border-top-left-radius: 24px;
   border-bottom-left-radius: 24px;
