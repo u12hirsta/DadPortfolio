@@ -81,20 +81,22 @@ body {
   border: 1.5px solid rgb(100, 100, 100);
   border-top: none;
 }
-.sidenav {
+.sidenav  {
     width: 100px;
     position: fixed;
-    z-index: 1;
+    display: block;
+    z-index: 0;
     border-top-left-radius: 40px;
     border-bottom-left-radius: 40px;
     top: 70%;
+    height: 23%;
     right: 0;
     background-color: rgba(0, 200, 255, 0.7);
     overflow-x: hidden;
     padding-top: 10px;
 }
 
-.sidenav a {
+.sidenav a{
     padding: 0px 0px 6px 16px;
     text-decoration: none;
     font-size: 25px;
@@ -103,5 +105,14 @@ body {
 }
 
 .sidenav a:hover {
+    display: block;
     color: #AAA;
+}
+.sideButton {
+  position: fixed;
+  top: 74%;
+  right: 80px;
+  z-index:1;
+  background: none;
+  border: none;
 }
