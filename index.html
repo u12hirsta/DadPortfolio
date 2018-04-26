@@ -9,58 +9,68 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   </head>
   <body>
-    <div class="HeaderContainer">
-        <div class="SocialBar">
-          <button class="invis"><i class="fa fa-facebook-square" style="font-size:24px; color:#3B5998;"></i></button>
-          <button class="invis"><i class="fa fa-twitter-square" style="font-size:24px; color:#00aced;"></i></button>
-          <button class="invis" onclick="window.scroll({top:900, left:0, behavior:'smooth'});"><i class="fa fa-map-marker" style="font-size:24px; color:#E83030;"></i></button>
+    <div class="FullContainer">
+      <div class="HeaderContainer">
+          <div class="SocialBar">
+            <button class="invis"><i class="fa fa-facebook-square" style="font-size:24px; color:#3B5998;"></i></button>
+            <button class="invis"><i class="fa fa-twitter-square" style="font-size:24px; color:#00aced;"></i></button>
+            <button class="invis" onclick="window.scroll({top:900, left:0, behavior:'smooth'});"><i class="fa fa-map-marker" style="font-size:24px; color:#E83030;"></i></button>
+          </div>
+          <div class="topBar">
+            <h2 class="title">RyMac</h2>
+            <h4 class="subtitle">Surface Coatings</h4>
+          </div>
+          <div class="navigationBar">
+            <ul>
+              <li><button onclick="">Home</button></li>
+              <li><button onclick="window.scroll({top:300, left:0, behavior:'smooth'});">Gallery</button></li>
+              <li><button onclick="window.scroll({top:600, left:0, behavior:'smooth'});">Quote</button></li>
+              <li><button onclick="window.scroll({top:900, left:0, behavior:'smooth'});">Contact</button></li>
+            <!--<button class="invis" type="button"><i class="fa fa-search" style="font-size: 20px;"></i></button>-->
+            </ul>
+          </div>
+      </div>
+      <button id="btnClose" class="sideButton" id="sideButton"><i class="fa fa-arrow-left" id="arrow" style="font-size:24px;"></i></button>
+      <div class="sidenav" id="sidenav">
+          <button class="side" onclick="window.scroll({
+            top: 0,
+            left: 0,
+            behavior: 'smooth'
+          });">Home</button>
+          <button class="side" onclick="window.scroll({
+            top: 300,
+            left: 0,
+            behavior: 'smooth'
+          });">Gallery</button>
+          <button class="side" onclick="window.scroll({
+            top: 600,
+            left: 0,
+            behavior: 'smooth'
+          });">Quote</button>
+          <button class="side" onclick="window.scroll({
+            top: 900,
+            left: 0,
+            behavior: 'smooth'
+          });">Contact</button>
+      </div>
+      <div class="BodyContainer">
+        <div class="ScrollingGallery">
+
         </div>
-        <div class="topBar">
-          <h2 class="title">RyMac</h2>
-          <h4 class="subtitle">Surface Coatings</h4>
+        <div class="Picture">
+
         </div>
-        <div class="navigationBar">
-          <ul>
-            <li><button onclick="window.scroll({top:0, left:0, behavior:'smooth'});">Home</button></li>
-            <li><button onclick="window.scroll({top:300, left:0, behavior:'smooth'});">Gallery</button></li>
-            <li><button onclick="window.scroll({top:600, left:0, behavior:'smooth'});">Quote</button></li>
-            <li><button onclick="window.scroll({top:900, left:0, behavior:'smooth'});">Contact</button></li>
-          <!--<button class="invis" type="button"><i class="fa fa-search" style="font-size: 20px;"></i></button>-->
-          </ul>
+        <div class="Quote">
+
         </div>
-    </div>
-    <button id="btnClose" class="sideButton" id="sideButton"><i class="fa fa-arrow-left" id="arrow" style="font-size:24px;"></i></button>
-    <div class="sidenav" id="sidenav">
-        <button class="side" onclick="window.scroll({
-          top: 0,
-          left: 0,
-          behavior: 'smooth'
-        });">Home</button>
-        <button class="side">Gallery</button>
-        <button class="side" onclick="window.scroll({
-          top: 600,
-          left: 0,
-          behavior: 'smooth'
-        });">Quote</button>
-        <button class="side" href="#">Contact</button>
-    </div>
-    <div class="BodyContainer">
-      <div class="ScrollingGallery">
-        
+        <div class="Contact">
+
+        </div>
       </div>
-      <div class="Picture">
+      <div class="FooterContainer">
 
       </div>
-      <div class="Quote">
-
-      </div>
-      <div class="Contact">
-
-      </div>
+      <script src="index.js"></script>
     </div>
-    <div class="FooterContainer">
-
-    </div>
-    <script src="index.js"></script>
   </body>
 </html>
